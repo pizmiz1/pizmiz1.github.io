@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app='index'>
   <head>
     <meta charset="utf-8">
     <title>Fuck</title>
@@ -21,13 +21,14 @@
     }</style>
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
     <script src="lib/angular/angular.js"></script>
+	  <script src="index.js"></script>
   </head>
   <body>
 
-    <div class="my-block">
+    <div class="my-block" ng-controller='ShufflerController'>
       <p style="color:aqua;font-size:200px">Hello.</p>
       <p style="color:greenyellow;font-size:60px">We're Ethan and Jackson.</p>
-      <p style="color:red;font-size:60px">Click <a target="_blank" rel="noopener noreferrer" href=http://pointl.us>here</a> to learn more about us.</p>
+      <p style="color:red;font-size:60px">Click <a href ng-click='GenerateSite()' target="_blank">here</a> to learn more about me.</p>
     </div>
 
   </body>

@@ -2,7 +2,7 @@
   "_args": [
     [
       "angular-mocks@1.8.0",
-      "C:\\Users\\Jax Main\\Desktop\\angular-phonecat"
+      "C:\\Users\\Lil Danny\\angular-phonecat"
     ]
   ],
   "_development": true,
@@ -27,7 +27,7 @@
   ],
   "_resolved": "https://registry.npmjs.org/angular-mocks/-/angular-mocks-1.8.0.tgz",
   "_spec": "1.8.0",
-  "_where": "C:\\Users\\Jax Main\\Desktop\\angular-phonecat",
+  "_where": "C:\\Users\\Lil Danny\\angular-phonecat",
   "author": {
     "name": "Angular Core Team",
     "email": "angular-core+npm@google.com"
