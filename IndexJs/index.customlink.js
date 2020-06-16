@@ -15,5 +15,5 @@ MyApp.controller('customlink', ['$scope', '$interval', function($scope, $interva
         $scope.chosenPic = $scope.Pics[$scope.var];
     }
 
-    $interval( function(){ $scope.callAtInterval(); }, 200);
+    $interval( function(){ $scope.callAtInterval(); }, 500);
 }]);
