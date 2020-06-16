@@ -1,4 +1,4 @@
-var MyApp = angular.module('index',[]);
+var MyApp = angular.module('Index');
 
 MyApp.controller('ShufflerController', ['$scope', '$window', function($scope, $window) {
 
@@ -16,5 +16,4 @@ MyApp.controller('ShufflerController', ['$scope', '$window', function($scope, $w
         $scope.sites.splice(chosen, 1);
         $window.open(chosenSite, '_blank');
     }
-
 }]);
