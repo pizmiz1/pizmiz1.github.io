@@ -2,7 +2,7 @@ var MyApp = angular.module('Index');
 
 MyApp.controller('customlink', ['$scope', '$interval', function($scope, $interval){
 
-    $scope.Pics = ['/img/favicons/favicon1.jpg?', '/img/favicons/favicon2.jpg?']
+    $scope.Pics = ['img/favicons/favicon1.jpg?', 'img/favicons/favicon2.jpg?']
     $scope.var = 0
     $scope.chosenPic = $scope.Pics[$scope.var]
     $scope.callAtInterval = function() {
