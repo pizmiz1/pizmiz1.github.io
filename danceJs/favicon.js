@@ -16,7 +16,7 @@ MyApp.controller('customlink', ['$scope', '$interval', function($scope, $interva
     }
 
     $scope.ChosenName = 'IntroJam'
-    $scope.ChosenDur = '6s'
+    $scope.ChosenDur = '5.5s'
     $scope.ChosenCount = '1'
     $scope.UpdateShit = function() {
         $scope.ChosenName = 'Jam';
@@ -25,6 +25,6 @@ MyApp.controller('customlink', ['$scope', '$interval', function($scope, $interva
     }
 
     $interval( function(){ $scope.callAtInterval(); }, 500);
-    $interval( function(){ $scope.UpdateShit(); }, 6000);
+    $interval( function(){ $scope.UpdateShit(); }, 5500);
 
 }]);

@@ -9,7 +9,7 @@ MyApp.controller('update_video_controller', ['$scope', '$interval', function($sc
         $scope.Auto = 'autoplay';
     }
 
-    $interval( function(){ $scope.UpdateVid(); }, 6000);
+    $interval( function(){ $scope.UpdateVid(); }, 5500);
 
 
 }]);
