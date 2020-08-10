@@ -16,7 +16,7 @@ MyApp.controller('customlink', ['$scope', '$interval', function($scope, $interva
     }
 
     $scope.ChosenName = 'IntroJam'
-    $scope.ChosenDur = '5.2s'
+    $scope.ChosenDur = '6s'
     $scope.ChosenCount = '1'
     $scope.UpdateShit = function() {
         $scope.ChosenName = 'Jam';
