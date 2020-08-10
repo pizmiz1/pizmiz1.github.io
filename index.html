@@ -3,7 +3,7 @@
   <head>
     <link rel="shortcut icon" type="image/x-icon" ng-href="{{chosenPic}}">
     <meta charset="utf-8">
-    <title>Fuck</title>
+    <title>:)</title>
 
     <style>html, body {
       height: 100%;
@@ -12,27 +12,48 @@
       width: 100%;
     }
     body {
-      display: table;
-    }
-    .my-block {
-      text-align: center;
-      display: table-cell;
-      vertical-align: middle;
-    }</style>
+      background-image: url('img/background/background.jpg');
+      background-color: coral;
 
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+      height: 90%;
+
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+
+    <link rel="stylesheet" href="lib/bootstrap4.0/css/bootstrap.css"/>
     <script src="lib/angular/angular.js"></script>
     <script src="IndexJs/index.js"></script>
     <script src="IndexJs/index.shuffler.js"></script>
-    <script src="IndexJs/index.customlink.js"></script>
+    <script src="indexJs/index.update_nav.js"></script>
+    <script src="IndexJs/favicon.js"></script>
   </head>
   <body>
-
-    <div class="my-block" ng-controller='ShufflerController'>
-      <p style="color:aqua;font-size:200px">Hello.</p>
-      <p style="color:greenyellow;font-size:60px">We're Ethan and Jackson.</p>
-      <p style="color:red;font-size:60px">Click <a href ng-click='GenerateSite()' target="_blank">here</a> to learn more about us.</p>
+    <div ng-controller='update_nav_controller'>
+      <nav class="navbar navbar-dark navbar-expand-sm bg-dark navbar-light justify-content-end">
+        <ul class="navbar-nav">
+          <li ng-class="text">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li ng-class="text2">
+            <a class="nav-link" href="dance_page.html">Dance</a>
+          </li>
+        </ul>
+      </nav>
     </div>
+
+    <div class='container d-flex h-100' ng-controller='ShufflerController'>
+      <div class="row justify-content-center align-self-center">
+        <p style="color:white;font-size:300px">Hello.</p>
+        <p style="color:white;font-size:60px">I'm Ethan Britton</p>
+        <p style="color:white;font-size:60px">Click <a href ng-click='GenerateSite()' target="_blank">here</a> to learn more about me.</p>
+      </div>
+    </div>
+
+
 
   </body>
 </html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" ng-app="dance" ng-controller='customlink'>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" ng-href="{{chosenPic}}">
+    <meta charset="utf-8">
+    <title>Ohh Yeah</title>
+
+    <style>html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    body {
+      background-color: red;
+      animation-name: {{ChosenName}};
+      animation-duration: {{ChosenDur}};
+      animation-iteration-count: {{ChosenCount}};
+    }
+    .center { 
+	    display: block; 
+	    width: auto; 
+      margin: 0 auto;
+      position: relative;
+      top: 42%;
+      transform: translateY(-42%);
+      opacity: 0;  
+      animation-name: Delay;
+      animation-delay: 5.2s;
+      animation-fill-mode: forwards; 
+    }  
+
+    @keyframes Delay {
+      from { opacity: 0;}
+      to { opacity: 1;} 
+    }
+  
+    @keyframes IntroJam {
+      0% {background-color: red;}
+      14% {background-color: yellow;}
+      28% {background-color: blue;}
+      42% {background-color: coral;}
+      56% {background-color: lightblue;}
+      70% {background-color: violet;}
+      84% {background-color: green;}
+      100% {background-color: black;}
+    }
+
+    @keyframes Jam {
+      0% {background-color: red;}
+      14% {background-color: yellow;}
+      28% {background-color: blue;}
+      42% {background-color: coral;}
+      56% {background-color: lightblue;}
+      70% {background-color: violet;}
+      84% {background-color: green;}
+      100% {background-color: red;}
+    }
+    </style>
+
+    <link rel="stylesheet" href="lib/bootstrap4.0/css/bootstrap.css"/>
+    <script src="lib/angular/angular.js"></script>
+    <script src="danceJs/dance.js"></script>
+    <script src="danceJs/favicon.js"></script>
+    <script src="danceJs/dance.update_nav.js"></script>
+    <script src="danceJs/update_video.js"></script>
+  </head>
+
+  <body>
+    <div ng-controller='update_nav_controller'>
+      <nav class="navbar navbar-dark navbar-expand-sm bg-dark navbar-light justify-content-end">
+        <ul class="navbar-nav">
+          <li ng-class="text2">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li ng-class='text'>
+            <a class="nav-link" href="dance_page.html">Dance</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <video class='center' width='40%' height='40%' autoplay loop ng-controller='update_video_controller'>
+      <source src= 'danceJs/FinalMix.mp4' type='video/mp4'>
+    </video>
+    
+  </body>
+</html>
