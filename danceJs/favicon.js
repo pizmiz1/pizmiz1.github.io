@@ -25,6 +25,6 @@ MyApp.controller('customlink', ['$scope', '$interval', function($scope, $interva
     }
 
     $interval( function(){ $scope.callAtInterval(); }, 500);
-    $interval( function(){ $scope.UpdateShit(); }, 5200);
+    $interval( function(){ $scope.UpdateShit(); }, 6000);
 
 }]);
